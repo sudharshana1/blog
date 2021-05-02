@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+    <script src="login.js"></script>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+            background: linear-gradient(to right top, #aa36a4, rgb(62, 200, 235));
+            overflow: hidden;
+        }
+
+        .center {
+            position: absolute;
+            top: 50%;
+            left: 45%;
+            transform: translate(-40%, -50%);
+            width: 400px;
+            background: white;
+            border: 2px solid;
+            border-radius: 10px;
+        }
+
+        .center h1 {
+            text-align: center;
+            padding: 0px 0px 20px 0px;
+            border-bottom: 1px solid silver;
+        }
+
+        .center form {
+            padding: 0px 40px;
+            box-sizing: border-box;
+        }
+
+        form .txt_feild {
+            position: relative;
+            border-bottom: 2px solid silver;
+            margin: 30px 0;
+        }
+
+        .txt_feild input {
+            width: 100%;
+            border: none;
+            font-size: 16px;
+            height: 40px;
+            padding: 0 5px;
+            background: none;
+            outline: none;
+
+        }
+
+        .txt_feild label {
+            position: absolute;
+            top: 50%;
+            left: 5px;
+            transform: translateY(-50%);
+            color: #adadad;
+            font-size: 16px;
+            pointer-events: none;
+            transition: 0.5s;
+        }
+
+        .txt_feild span::before {
+            content: '';
+            position: absolute;
+            top: 40px;
+            left: 0;
+            height: 2px;
+            width: 0%;
+            transition: 0.1s;
+            background: #2691d8;
+        }
+
+        .txt_feild input:focus~label,
+        .txt_feild input:valid~label {
+            top: -5px;
+            color: #2691d8;
+        }
+        .txt_feild input:focus~span::before,
+        .txt_feild input:valid~span::before{
+            width:100%;
+        }
+        .pass{
+            margin: -5px 0px 20px 5px;
+            cursor: pointer;
+            color:silver;
+        }
+        .pass:hover{
+            text-decoration: underline;
+        }
+        input[type="submit"]{
+            width: 100%;
+            height: 50px;
+            border: none;
+            border-radius: 25px;
+            background: #2691d8;
+            font-size: 18px;
+            color:whitesmoke;
+            font-weight: 700;
+            cursor: pointer;
+            outline:none;
+        }
+        input[type="submit"]:hover{
+            border-color: #2691d8;
+            transition: .5s;
+        }
+        .signup_link{
+            margin: 30px;
+            text-align: center;
+            font-size:16px;
+            color:#666666;
+        }
+        .signup_link a{
+            color:#2691d8;
+            text-decoration: none;
+        }
+        .signup_link a:hover{
+            text-decoration: underline;
+        }
+        img {
+            height: 7%;
+            width: 10%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="image">
+        <img src="https://stackify.com/wp-content/uploads/2018/09/Learn-Python-1-881x441.jpg">
+    </div>
+    <div class="center">
+        <h1>Login</h1>
+        <form action="Home.html">
+            <div class="txt_feild">
+                <input type="text" required>
+                <span></span>
+                <label>Username</label>
+            </div>
+            <div class="txt_feild">
+                <input type="password" required>
+                <span></span>
+                <label>Password</label>
+            </div>
+            <div class="pass">Forgot Password </div>
+            <div>
+                <input type="submit"  value="Login"/>
+            </div>
+            <div class="signup_link">
+                Not a Member?<a href="./Signup.html" style="text-decoration: none;">Signup</a>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
