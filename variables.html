@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variables</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to left top, #aa36a4, rgb(62, 200, 235));
+            min-height: 120vh;
+        }
+        #topicslist {
+            width: 13%;
+            float: left;
+            background-color: #ffe873;
+            font-family: 'Segoe UI', Arial, sans-serif;
+            top: 50%;
+            height: 120vh;
+            position: flex;
+            justify-content: right;
+            border: 2px solid;
+        }
+
+        #topicslist a {
+            text-decoration: none;
+        }
+
+        #pp1 {
+            text-align: center;
+            position: absolute;
+            top: -1%;
+            font-family: fantasy;
+            font-size: 30px;
+            font-weight: 550;
+            color: white;
+            right: 87%;
+        }
+
+        .img {
+            height: 60px;
+            background-color: #1f4260;
+            width: 100%;
+        }
+        button {
+            border: 2px solid rgb(232, 232, 241);
+            font-size: 20px;
+            font-weight: 700;
+            border-radius: 2rem;
+            background: rgba(0, 81, 255, 0.377);
+            position: absolute;
+            right: 20px;
+        }
+
+        button a {
+            color: white;
+        }
+        .button2 {
+            border: 2px solid rgb(232, 232, 241);
+            font-size: 20px;
+            font-weight: 700;
+            border-radius: 2rem;
+            background: rgba(0, 81, 255, 0.377);
+            position: absolute;
+            left: 345px;
+        }
+    </style>
+</head>
+<body>
+    <div class="img">
+        <img id="pythonlogo" src="https://stackify.com/wp-content/uploads/2018/09/Learn-Python-1-881x441.jpg"
+            alt="pythonicon" height="100%">
+        <p id="pp1">Python</p>
+    </div>
+    <div>
+        <div id="topicslist">
+            <h2>&nbsp;&nbsp;Python Tutorial</h2>
+            <ul>
+                <li><a href="./Home.html">Homepage</a></li>
+                <li><a href="./Python_Intro.html">Python Introduction</a></li>
+                <li><a href="./How_to_get_start.html">Python Installation</a></li>
+                <li><a href="./Basic_syntax.html">Python syntax</a></li>
+                <li><a href="./PythonComment.html">Python comments</a></li>
+                <li><a href="./variables.html">Python Variables</a></li>
+                <li><a href="./Data types.html">Python Data types</a></li>
+                <li><a href="./loops.html">Python Loops</a></li>
+                <li><a href="./ConditionalSyntax.html">Condition Statements</a></li>
+                
+                
+                <li><a href="./External_resources.html">External_resources</a></li>
+            </ul>
+        </div>
+    </div>
+    <div>
+        <h1>Python Variables</h1>
+        <b><p style="font-size: 19px;">Variables:</b><br>
+            <b>Variables are containers for storing data values.</b></p>
+        <p style="font-size: 19px;">Creating Variables<br>
+            Python has no command for declaring a variable.<br>
+            
+            A variable is created the moment you first assign a value to it.<br>
+            Example:</p>
+         <p style="min-height: 30px;width: 70%;background: black;color:whitesmoke;border-radius:1rem">x = 5<br>
+            y = "John"<br>
+            print(x)<br>
+            print(y)</p>
+        <p style="font-size: 19px;">Variables do not need to be declared with any particular type, and can even change type after they have been set.<br>
+
+            Example:</p>
+        <p style="min-height: 30px;width: 70%;background: black;color:whitesmoke;border-radius:1rem">x = 4       _# x is of type int<br>
+            x = "Sally" _# x is now of type str<br>
+            print(x)</p>
+        <h1>Casting</h1>
+        <p style="font-size: 19px;">If you want to specify the data type of a variable, this can be done with casting.
+
+            Example:</p>
+        <p style="min-height: 30px;width: 70%;background: black;color:whitesmoke;border-radius:1rem">x = str(3)    # x will be '3'<br>
+            y = int(3)    # y will be 3<br>
+            z = float(3)  # z will be 3.0</p>
+        <h1>Get the Type</h1>
+        <p style="font-size: 19px;">You can get the data type of a variable with the type() function.<br>
+
+            Example:</p>
+        <p style="min-height: 30px;width: 70%;background: black;color:whitesmoke;border-radius:1rem">x = 5<br>
+            y = "John"<br>
+            print(type(x))<br>
+            print(type(y))</p>
+        <p style="font-size: 19px;">You will learn more about data types and casting later in this tutorial.</p>
+    </div>
+    <div>
+        <a href="./Data types.html">
+            <button>Next</button>
+        </a>
+    </div>
+    <div class="button2">
+        <a href="./PythonComment.html">
+            <button>Previous</button>
+        </a>
+    </div>
+</body>
+</html>
